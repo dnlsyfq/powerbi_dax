@@ -20,3 +20,26 @@ LEFT('DATACAMP',4) // DATA
 ```
 MAX(table[COL])
 ```
+
+## Calculate Function
+```
+CALCULATE(
+  SUM(Commodities[Volume]),
+  FILTER(Commodities,Commodities[Symbol]='Gold'),
+  FILTER(Commodities,YEAR(Commodities[Date])=2021)
+)
+```
+```
+
+```
+
+## Variable in PowerBI
+```
+VAR GoldVolume20 = CALCULATE(
+  SUM(Commodities[Volume]),
+  FILTER( Commodities, Commodities[Symbol]='Gold'),
+  FILTER( Commodities, YEAR(Commodities[Date])=2020)
+  )
+  
+RETURN DIVIDE([GoldVolume21]-GoldVolume20, GoldVolume20)
+```
