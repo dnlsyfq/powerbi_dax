@@ -1,5 +1,10 @@
 # DAX
 
+* Columns evaluates each row
+* Measure aggregates multiple rows 
+
+Profit margin ratio compares the total profit to the total sales
+
 ## Function
 ```
 SUM(COL)
