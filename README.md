@@ -48,3 +48,15 @@ VAR GoldVolume20 = CALCULATE(
   
 RETURN DIVIDE([GoldVolume21]-GoldVolume20, GoldVolume20)
 ```
+
+## Dates
+```
+YEAR(<date>
+QUARTER(<datetime>)
+MONTH(<datetime>)
+
+FORMAT(<date>,<"dddd">) // Friday
+FORMAT(<date>,<"h:nn:ss">)
+CALENDAR(<start_date>,<end_date>) // table with single column date
+CALENDARAUTO(<fiscal year end month>) // table with single column take earliest and latest date in the model e.g. CALENDARAUTO(12)
+```
