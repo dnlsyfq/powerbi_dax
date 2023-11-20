@@ -1,5 +1,38 @@
 # DAX
 
+```
+IF(
+  EXPR,TRUE,FALSE
+)
+```
+```
+CALENDARAUTO(
+  <INT: START AFTER>
+)
+
+CALENDARAUTO(12)
+```
+
+```
+ADDCOLUMNS(
+  CALENDARAUTO(),
+  "Year", YEAR([Date]),
+  "Month", MONTH([Date]),
+  "Month Name", FORMAT([Date],"MMM")
+)
+
+```
+
+* Count Row
+```
+COUNTROWS(<table>
+```
+```
+COUNT(<table>.<column>)
+```
+
+
+
 * Columns evaluates each row
 * Measure aggregates multiple rows 
 
