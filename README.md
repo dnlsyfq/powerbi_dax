@@ -93,3 +93,9 @@ FORMAT(<date>,<"h:nn:ss">)
 CALENDAR(<start_date>,<end_date>) // table with single column date
 CALENDARAUTO(<fiscal year end month>) // table with single column take earliest and latest date in the model e.g. CALENDARAUTO(12)
 ```
+
+# AVERAGEX
+
+```
+AVERAGEX(table, table[col1] - table[col2]) // apply across the card 
+```
