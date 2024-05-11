@@ -99,3 +99,12 @@ CALENDARAUTO(<fiscal year end month>) // table with single column take earliest 
 ```
 AVERAGEX(table, table[col1] - table[col2]) // apply across the card 
 ```
+
+# CALCULATE
+```
+CALCULATE(
+  SUM(DF[COL1]),
+  FILTER(DF,DF[COL2]=''),
+  FILTER(DF, DF[COL3]='')
+)
+```
