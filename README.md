@@ -108,3 +108,16 @@ CALCULATE(
   FILTER(DF, DF[COL3]='')
 )
 ```
+
+# VAR
+```
+VAR GoldVolume20 = CALCULATE(
+  SUM(DF[COL]),
+  FILTER(DF, DF[COL]=''),
+  FILTER(DF, YEAR(DF[COL]) = '')
+)
+
+RETURN DIVIDE([GoldVolume21] - GoldVolume20, GoldVolume20)
+
+
+```
