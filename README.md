@@ -121,3 +121,32 @@ RETURN DIVIDE([GoldVolume21] - GoldVolume20, GoldVolume20)
 
 
 ```
+
+# Dates
+
+```
+YEAR(COL)
+QUARTER(COL)
+MONTH(COL)
+```
+
+```
+FORMAT(<date>,"dddd") // Friday
+FORMAT(<date>,"h:nn:ss") 
+```
+
+```
+CALENDAR(<start>,<end>)
+CALENDARAUTO(12) // Jan 2000 to Dec 2022
+```
+
+* timeline customer making an order to the delivery being due
+```
+DATEDIFF(
+  <Start>,
+  <End>,
+  DAY
+)
+```
+
+
